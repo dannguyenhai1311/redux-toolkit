@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   todos: [],
 };
-
+// Redux core
 // export const todosReducer = (state = initialState, action) => {
 //   console.log({action})
 //   switch(action.type) {
@@ -19,6 +19,7 @@ const initialState = {
 //       return state
 //   }
 // }
+// redux toolkit
 const todosSlice = createSlice({
   name: "Todos",
   initialState,
@@ -32,4 +33,4 @@ const todosSlice = createSlice({
   },
 });
 export const { addTodoAction, deleteTodoAction } = todosSlice.actions;
-export default todosSlice.reducer;
+export default todosSlice.reducer;  
